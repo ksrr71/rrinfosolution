@@ -1,0 +1,17 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 80rem;
+  overflow: hidden;
+}
+
+@media (min-width: 80rem) {
+  .container {
+    overflow: visible;
+  }
+}

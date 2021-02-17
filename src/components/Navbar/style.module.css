@@ -1,0 +1,35 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 80rem;
+  overflow: hidden;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.logo {
+  color: blue;
+}
+
+.list {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.item {
+  cursor: pointer;
+}
+
+.item:hover {
+  color: blue;
+}

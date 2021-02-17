@@ -1,0 +1,241 @@
+@import "../src/scss";
+
+.container {
+  min-height: 30rem;
+  margin: 2rem 0;
+}
+
+.mainImg {
+  width: 48%;
+}
+
+.row {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.right {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  width: 100%;
+  color: $secondary;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.desc {
+  color: #2f2e2e;
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+}
+
+.seeMore {
+  @include circleBorderButton;
+  border-radius: 0;
+  align-self: flex-start;
+}
+
+.seeMore:hover {
+  color: white;
+  background: $secondary;
+  transition: ease-in-out 0.3s;
+}
+
+.commitmentDiv {
+  display: flex;
+  margin: 6rem 0;
+  padding: 4rem 0;
+  position: relative;
+  flex-direction: column;
+}
+
+.divTitle {
+  color: $secondary;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.divDesc {
+  width: 60%;
+  text-align: center;
+  align-self: center;
+}
+
+.cardCont {
+  width: 85%;
+  margin: auto;
+  color: white;
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 28%;
+  padding: 2rem;
+  background: $secondary;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 0 #dfdfdf;
+  transition: ease-in-out 0.3s;
+}
+
+.card:hover {
+  transition: ease-in-out 0.3s;
+  background: rgba($color: $secondary, $alpha: 0.9);
+}
+
+.cardIcon {
+  height: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.cardDesc {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.serviceCard {
+  width: 40%;
+  display: flex;
+  padding: 2rem;
+  color: #000;
+  border-radius: 8px;
+  background-color: white;
+  flex-direction: column;
+  box-shadow: 0 0 10px 0 #dfdfdf;
+}
+
+.serviceCardIcon {
+  width: 100%;
+  margin-bottom: auto;
+}
+
+.serviceCardTitle {
+  color: $primary;
+  font-size: 1.3rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.serviceCardDesc {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contactNow {
+  @include circleBorderButton;
+}
+
+.contactNow:hover {
+  color: white;
+  background: $primary;
+  transition: ease-in-out 0.3s;
+}
+
+.contactUs {
+  width: 50%;
+  display: flex;
+  color: white;
+  padding: 4rem 0;
+  border-radius: 8px;
+  margin: 6rem auto;
+  align-self: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background: $secondary;
+}
+
+.contactTitle {
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.contactButton {
+  @include circleBorderButton;
+
+  color: white;
+  margin-top: 3rem;
+  border-color: white;
+  background: $secondary;
+}
+
+.circle1 {
+  @include circle();
+  bottom: -8rem;
+  right: -5rem;
+}
+
+.circle2 {
+  @include circle();
+  left: -5rem;
+  bottom: 15rem;
+}
+
+.rect1 {
+  @include rect();
+  bottom: -3rem;
+  left: -10rem;
+  transform: rotate(30deg);
+}
+
+.smallRect1 {
+  @include smallRect();
+  bottom: 6rem;
+  right: 0;
+}
+
+.smallRect2 {
+  @include smallRect();
+  bottom: 0rem;
+  right: 0;
+}
+
+.smallRect3 {
+  @include smallRect();
+  bottom: -6rem;
+  right: 0;
+}
+
+@media (max-width: 600px) {
+  .mainImg {
+    display: none;
+  }
+
+  .right {
+    width: 90%;
+    margin: auto;
+  }
+
+  .divDesc {
+    width: 90%;
+    font-size: 1.3rem;
+  }
+
+  .cardCont {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .card,
+  .serviceCard {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  .contactUs {
+    width: 90%;
+    margin: auto;
+    padding: 2rem 0;
+  }
+}

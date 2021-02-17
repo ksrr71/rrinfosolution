@@ -1,0 +1,68 @@
+@import "../../scss";
+
+.wrapper {
+  width: 100%;
+  color: white;
+  background: $dark;
+}
+
+.footer {
+  width: 100%;
+  margin: auto;
+  max-width: 80rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright {
+  width: 100%;
+  margin: auto;
+  max-width: 80rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: 0.6rem;
+}
+
+.left,
+.right {
+  width: 50%;
+  display: flex;
+  padding: 4rem 10%;
+  text-align: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.byline {
+  margin-top: 1rem;
+}
+
+.contactus {
+  @include circleBorderButton;
+
+  color: white;
+  background: $dark;
+  margin-bottom: 2rem;
+  border-color: white;
+}
+
+.icons {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    padding: 3rem;
+  }
+}
