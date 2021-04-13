@@ -33,3 +33,9 @@
 .item:hover {
   color: blue;
 }
+
+@media only screen and (max-width: 600px) {
+  .list {
+    display: none;
+  }
+}

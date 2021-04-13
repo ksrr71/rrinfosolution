@@ -106,7 +106,7 @@
 }
 
 .serviceCard {
-  width: 40%;
+  width: 30%;
   display: flex;
   padding: 2rem;
   color: #000;
@@ -114,6 +114,12 @@
   background-color: white;
   flex-direction: column;
   box-shadow: 0 0 10px 0 #dfdfdf;
+  transition: ease-in-out 0.3s;
+}
+
+.serviceCard:hover {
+  transition: ease-in-out 0.3s;
+  box-shadow: 0 0 10px 0 #888;
 }
 
 .serviceCardIcon {
@@ -237,5 +243,13 @@
     width: 90%;
     margin: auto;
     padding: 2rem 0;
+  }
+
+  .contactTitle {
+    font-size: 1.5rem;
+  }
+
+  .divDesc {
+    font-size: 1rem;
   }
 }

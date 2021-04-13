@@ -1,6 +1,5 @@
-import React from "react";
-
-import styles from "./style.module.css";
+import Link from "next/link";
+import styles from "./style.module.scss";
 
 export default function Navbar() {
   return (
@@ -10,8 +9,13 @@ export default function Navbar() {
 
         <ul className={styles.list}>
           <li className={styles.item}>Home</li>
+          <li className={styles.item}>
+            <Link href="#services">Services</Link>
+          </li>
           <li className={styles.item}>About Us</li>
-          <li className={styles.item}>Contact Us</li>
+          <li className={styles.item}>
+            <Link href="#contactUs">Contact Us</Link>
+          </li>
         </ul>
       </div>
     </div>

@@ -20,7 +20,7 @@ const ServiceCard = ({ item }) => {
       <img src={item.link} alt="icons" className={styles.serviceCardIcon} />
       <h1 className={styles.serviceCardTitle}>{item.title}</h1>
       <p className={styles.serviceCardDesc}>{item.desc}</p>
-      <button className={styles.contactNow}>Contact Now &nbsp; ></button>
+      <button className={styles.contactNow}>Contact Now </button>
     </div>
   );
 };
@@ -50,14 +50,18 @@ export default function Home({ posts }) {
   const serviceCardDetail = [
     {
       title: "Websites",
-      desc:
-        "Build Dynamic and Featureful websites that are eye-catching and user friendly.",
+      desc: "Build Featureful websites that are compatible with every device.",
       link: "/images/website.svg",
     },
     {
       title: "Mobile Apps",
       desc: "Amazing Mobile Applications that works on both Android and IOS.",
       link: "/images/mobile.svg",
+    },
+    {
+      title: "Servers",
+      desc: "Powerful and Robust servers that can serve multiple clients. ",
+      link: "/images/server.svg",
     },
   ];
 
@@ -100,7 +104,7 @@ export default function Home({ posts }) {
           <div className={styles.rect1} />
         </div>
 
-        <div className={styles.commitmentDiv}>
+        <div className={styles.commitmentDiv} id="services">
           <h1 className={styles.divTitle}>Our Services</h1>
           <p className={styles.divDesc}>
             Our experienced developers use the latest technologies to make
@@ -122,16 +126,14 @@ export default function Home({ posts }) {
         </div>
 
         <Fade bottom>
-          <div className={styles.contactUs}>
+          <div className={styles.contactUs} id="contactUs">
             <h1 className={styles.contactTitle}>Connect With Us</h1>
             <p className={styles.divDesc}>
               We are just a call away. Get connected with us and expand your
               network. Your right customer are waiting, you just have to show
               them your power.
             </p>
-            <button className={styles.contactButton}>
-              Talk to us &nbsp; >
-            </button>
+            <button className={styles.contactButton}>Talk to us</button>
           </div>
         </Fade>
       </div>
