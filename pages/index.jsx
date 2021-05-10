@@ -127,13 +127,16 @@ export default function Home({ posts }) {
 
         <Fade bottom>
           <div className={styles.contactUs} id="contactUs">
-            <h1 className={styles.contactTitle}>Connect With Us</h1>
-            <p className={styles.divDesc}>
-              We are just a call away. Get connected with us and expand your
-              network. Your right customer are waiting, you just have to show
-              them your power.
-            </p>
-            <button className={styles.contactButton}>Talk to us</button>
+            <div className={styles.right}>
+              <h1 className={styles.contactTitle}>Connect With Us</h1>
+              <p className={styles.contactMessage}>
+                We are just a call away. Get connected with us and expand your
+                network. Your right customer are waiting, you just have to show
+                them your power.
+              </p>
+              <button className={styles.contactButton}>Talk to us</button>
+            </div>
+            <img src="/images/mailbox.svg" className={styles.contactUsImage} />
           </div>
         </Fade>
       </div>

@@ -149,30 +149,35 @@
 }
 
 .contactUs {
-  width: 50%;
+  width: 80%;
   display: flex;
-  color: white;
-  padding: 4rem 0;
-  border-radius: 8px;
+  padding: 4rem;
   margin: 6rem auto;
-  align-self: center;
-  flex-direction: column;
-  justify-content: space-around;
-  background: $primary;
+  position: relative;
+  background: white;
+  border-radius: 15px;
+  border: 4px solid $primary;
+  justify-content: space-between;
+}
+
+.contactUsImage {
+  width: 40%;
 }
 
 .contactTitle {
-  align-self: center;
+  color: $primary;
   margin-bottom: 1rem;
+}
+
+.contactMessage {
+  margin-top: 1rem;
+  font-size: 1.2rem;
 }
 
 .contactButton {
   @include circleBorderButton;
-
-  color: white;
+  align-self: auto;
   margin-top: 3rem;
-  border-color: white;
-  background: $primary;
 }
 
 .circle1 {
@@ -245,13 +250,28 @@
   }
 
   .contactUs {
+    border: 0;
     width: 90%;
     margin: auto;
     padding: 2rem 0;
-  }
+    align-items: center;
+    flex-direction: column-reverse;
 
-  .contactTitle {
-    font-size: 1.5rem;
+    .right {
+      align-items: center;
+    }
+
+    .contactUsImage {
+      width: 80%;
+    }
+
+    .contactTitle {
+      font-size: 1.5rem;
+    }
+
+    .contactMessage {
+      text-align: center;
+    }
   }
 
   .divDesc {
