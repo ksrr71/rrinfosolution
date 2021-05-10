@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <h1 className={styles.logo}>ReachTheWeb</h1>
+        <img src="/icons/logo.png" alt="logo" className={styles.logo} />
 
         <ul className={styles.list}>
           <li className={styles.item}>Home</li>

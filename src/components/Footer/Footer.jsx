@@ -11,7 +11,7 @@ export default function Footer() {
         <div className={styles.left}>
           <h1>ReachTheWeb</h1>
           <p className={styles.byline}>
-            Best Developers For Your Amazing Ideas
+            Building Dreams And Ideas Into Reality
           </p>
         </div>
 

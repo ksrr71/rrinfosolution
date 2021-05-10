@@ -24,7 +24,7 @@
 
 .title {
   width: 100%;
-  color: $secondary;
+  color: $primary;
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
 }
@@ -43,7 +43,7 @@
 
 .seeMore:hover {
   color: white;
-  background: $secondary;
+  background: $primary;
   transition: ease-in-out 0.3s;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .divTitle {
-  color: $secondary;
+  color: $primary;
   align-self: center;
   margin-bottom: 1rem;
 }
@@ -79,15 +79,15 @@
 .card {
   width: 28%;
   padding: 2rem;
-  background: $secondary;
+  background: $primary;
   border-radius: 8px;
-  box-shadow: 0 0 10px 0 #dfdfdf;
   transition: ease-in-out 0.3s;
 }
 
 .card:hover {
+  width: 28%;
   transition: ease-in-out 0.3s;
-  background: rgba($color: $secondary, $alpha: 0.9);
+  box-shadow: 0 0 10px 0 #555;
 }
 
 .cardIcon {
@@ -158,7 +158,7 @@
   align-self: center;
   flex-direction: column;
   justify-content: space-around;
-  background: $secondary;
+  background: $primary;
 }
 
 .contactTitle {
@@ -172,7 +172,7 @@
   color: white;
   margin-top: 3rem;
   border-color: white;
-  background: $secondary;
+  background: $primary;
 }
 
 .circle1 {
@@ -213,13 +213,18 @@
 }
 
 @media (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+
   .mainImg {
-    display: none;
+    width: 100%;
   }
 
   .right {
     width: 90%;
     margin: auto;
+    margin-top: 4rem;
   }
 
   .divDesc {

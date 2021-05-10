@@ -1,6 +1,12 @@
+@import "../../scss";
+
 .wrapper {
+  z-index: 1;
   width: 100%;
   display: flex;
+  position: fixed;
+  background-color: white;
+  box-shadow: 0 0 10px 0 #dfdfdf;
 }
 
 .container {
@@ -9,14 +15,13 @@
   max-width: 80rem;
   overflow: hidden;
   display: flex;
-  padding: 1rem;
   align-items: center;
-  background-color: white;
   justify-content: space-between;
 }
 
 .logo {
-  color: blue;
+  color: $primary;
+  width: 20%;
 }
 
 .list {
@@ -31,10 +36,15 @@
 }
 
 .item:hover {
-  color: blue;
+  color: $primary;
 }
 
 @media only screen and (max-width: 600px) {
+  .logo {
+    width: 60%;
+    margin: auto;
+  }
+
   .list {
     display: none;
   }
