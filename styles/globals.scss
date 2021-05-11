@@ -1,3 +1,5 @@
+@import "../src/scss";
+
 @font-face {
   font-family: Avenir-Heavy;
   src: url("../src/fonts/AvenirNext-Heavy.ttf");
@@ -59,4 +61,15 @@ a {
   box-sizing: border-box;
   outline: none !important;
   font-family: Metropolis-Medium;
+}
+
+// Scroll bar styling
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary;
+  border-radius: 10px;
 }
