@@ -139,6 +139,45 @@ export default function Home({ posts }) {
           <div className={styles.smallRect3} />
         </div>
 
+        <div className={styles.companyDiv}>
+          <h1 className={styles.divTitle}>Our happy clients</h1>
+          <p className={styles.divDesc}>
+            We have delivered exceptional products to our clients.
+          </p>
+
+          <Fade bottom>
+            <div className={styles.company}>
+              <a
+                href="https://growthgear.in"
+                className={styles.partners}
+                target="_blank"
+                rel="noopener noreferrer"
+                passHref
+              >
+                <img src="/images/clients/growthgear.jpeg" alt="GrowthGear" />
+              </a>
+              <a
+                href="https://enim.ai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.partners}
+                passHref
+              >
+                <img src="/images/clients/enim.png" alt="Enim.Ai" />
+              </a>
+
+              {/* <a
+                href="https://www.startwithgenesis.in/"
+                className={styles.partners}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/images/clients/start.png" alt="StartWithGenesys" />
+              </a> */}
+            </div>
+          </Fade>
+        </div>
+
         <Fade bottom>
           <div className={styles.contactUs} id="contactUs">
             <div className={styles.right}>
