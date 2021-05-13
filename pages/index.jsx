@@ -1,6 +1,9 @@
+import { useState } from "react";
+
 import Fade from "react-reveal/Fade";
 
 import MainLayout from "../src/layouts/MainLayout";
+import ContactUs from "../src/components/ContactUsForm/ContactUs";
 
 import styles from "../styles/Home.module.scss";
 
@@ -14,35 +17,40 @@ const Card = ({ item }) => {
   );
 };
 
-const ServiceCard = ({ item }) => {
+const ServiceCard = ({ item, handleOpenContact }) => {
   return (
     <div className={styles.serviceCard}>
       <img src={item.link} alt="icons" className={styles.serviceCardIcon} />
       <h1 className={styles.serviceCardTitle}>{item.title}</h1>
       <p className={styles.serviceCardDesc}>{item.desc}</p>
-      <button className={styles.contactNow}>Contact Now </button>
+      <button className={styles.contactNow} onClick={handleOpenContact}>
+        Contact Now{" "}
+      </button>
     </div>
   );
 };
 
 export default function Home({ posts }) {
+  const [openContactForm, setOpenContactForm] = useState(false);
+
+  const handleOpenContact = () => {
+    setOpenContactForm(true);
+  };
+
   const cardDetail = [
     {
       title: "Faster",
-      desc:
-        "We give you guaranteed 12-hour turnarounds so that you can push ideas faster",
+      desc: "We give you guaranteed 12-hour turnarounds so that you can push ideas faster",
       link: "/icons/fast.png",
     },
     {
       title: "Cheaper",
-      desc:
-        "Our charges are reasonable and we don't charge any hidden overhead expenses",
+      desc: "Our charges are reasonable and we don't charge any hidden overhead expenses",
       link: "/icons/cheap.png",
     },
     {
       title: "Easier",
-      desc:
-        "We need only a little of your time to understand your requirements and start working.",
+      desc: "We need only a little of your time to understand your requirements and start working.",
       link: "/icons/easy.png",
     },
   ];
@@ -80,7 +88,9 @@ export default function Home({ posts }) {
                 business grow.
               </p>
 
-              <button className={styles.seeMore}>Connect With Us</button>
+              <button className={styles.seeMore} onClick={handleOpenContact}>
+                Connect With Us
+              </button>
             </Fade>
             <div className={styles.circle1} />
           </div>
@@ -114,7 +124,11 @@ export default function Home({ posts }) {
           <Fade bottom>
             <div className={styles.cardCont}>
               {serviceCardDetail.map((item, key) => (
-                <ServiceCard item={item} key={key} />
+                <ServiceCard
+                  item={item}
+                  key={key}
+                  handleOpenContact={handleOpenContact}
+                />
               ))}
             </div>
           </Fade>
@@ -134,12 +148,22 @@ export default function Home({ posts }) {
                 network. Your right customer are waiting, you just have to show
                 them your power.
               </p>
-              <button className={styles.contactButton}>Talk to us</button>
+              <button
+                className={styles.contactButton}
+                onClick={handleOpenContact}
+              >
+                Talk to us
+              </button>
             </div>
             <img src="/images/mailbox.svg" className={styles.contactUsImage} />
           </div>
         </Fade>
       </div>
+
+      <ContactUs
+        open={openContactForm}
+        handleClose={() => setOpenContactForm(false)}
+      />
     </MainLayout>
   );
 }
