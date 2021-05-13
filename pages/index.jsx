@@ -145,7 +145,7 @@ export default function Home({ posts }) {
               <h1 className={styles.contactTitle}>Connect With Us</h1>
               <p className={styles.contactMessage}>
                 We are just a call away. Get connected with us and expand your
-                network. Your right customer are waiting, you just have to show
+                network. Your right customers are waiting, you just have to show
                 them your power.
               </p>
               <button
