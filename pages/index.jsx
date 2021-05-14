@@ -147,24 +147,53 @@ export default function Home({ posts }) {
 
           <Fade bottom>
             <div className={styles.company}>
-              <a
-                href="https://growthgear.in"
-                className={styles.partners}
-                target="_blank"
-                rel="noopener noreferrer"
-                passHref
-              >
-                <img src="/images/clients/growthgear.jpeg" alt="GrowthGear" />
-              </a>
-              <a
+              {/* <a
                 href="https://enim.ai"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.partners}
                 passHref
-              >
-                <img src="/images/clients/enim.png" alt="Enim.Ai" />
-              </a>
+              > */}
+              <img
+                src="/images/clients/enim.png"
+                alt="Enim.Ai"
+                className={styles.partners}
+              />
+              {/* </a> */}
+
+              {/* <a
+                href="https://growthgear.in"
+                className={styles.partners}
+                target="_blank"
+                rel="noopener noreferrer"
+                passHref
+              > */}
+              <img
+                src="/images/clients/growthgear.jpeg"
+                alt="GrowthGear"
+                className={styles.partners}
+              />
+              {/* </a> */}
+
+              {/* <a
+                href="https://www.vtorlabs.com/#/home"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.partners}
+                passHref
+              > */}
+              <img
+                src="/images/clients/vtor.png"
+                alt="Vtor Labs"
+                className={styles.partners}
+              />
+              {/* </a> */}
+
+              <img
+                src="/images/clients/bigfit.png"
+                alt="BigFit"
+                className={styles.partners}
+              />
 
               {/* <a
                 href="https://www.startwithgenesis.in/"

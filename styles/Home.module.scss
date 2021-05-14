@@ -63,6 +63,7 @@
   color: $primary;
   align-self: center;
   margin-bottom: 1rem;
+  text-decoration: underline;
 }
 
 .divDesc {
@@ -144,7 +145,7 @@
 .companyDiv {
   @include sectionDiv;
 
-  width: 80%;
+  width: 90%;
   margin: 10rem auto;
   background: white;
   box-shadow: 0 0 10px 0 #dfdfdf;
@@ -158,15 +159,10 @@
 }
 
 .partners {
+  width: 20%;
   display: flex;
-  height: 100%;
   max-height: 10rem;
   max-width: 14rem;
-  img {
-    margin: auto;
-    max-width: 100%;
-    max-height: 100%;
-  }
 }
 
 .contactNow {
@@ -198,6 +194,7 @@
 .contactTitle {
   color: $primary;
   margin-bottom: 1rem;
+  text-decoration: underline;
 }
 
 .contactMessage {
@@ -310,7 +307,11 @@
   }
 
   .company {
-    height: 20rem;
+    height: 36rem;
     flex-direction: column;
+  }
+
+  .partners {
+    width: 100%;
   }
 }
