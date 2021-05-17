@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Fade from "react-reveal/Fade";
 
 import MainLayout from "../src/layouts/MainLayout";
 import ContactUs from "../src/components/ContactUsForm/ContactUs";
+
+import axios from "axios";
+import { viewLandingPageURL, viewContactURL } from "../Utils/constants";
 
 import styles from "../styles/Home.module.scss";
 
@@ -33,7 +36,19 @@ const ServiceCard = ({ item, handleOpenContact }) => {
 export default function Home({ posts }) {
   const [openContactForm, setOpenContactForm] = useState(false);
 
+  useEffect(() => {
+    axios
+      .post(viewLandingPageURL)
+      .then((res) => {})
+      .catch((err) => {});
+  }, []);
+
   const handleOpenContact = () => {
+    axios
+      .post(viewContactURL)
+      .then((res) => {})
+      .catch((err) => {});
+
     setOpenContactForm(true);
   };
 
