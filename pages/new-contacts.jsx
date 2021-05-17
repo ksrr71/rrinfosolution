@@ -6,9 +6,10 @@ import axios from "axios";
 import { getAllContactsURL } from "../Utils/constants";
 
 const columns = [
-  { field: "id", headerName: "Id", width: 80 },
-  { field: "name", headerName: "Name", width: 130 },
+  { field: "id", headerName: "Id", width: 65 },
+  { field: "name", headerName: "Name", width: 160 },
   { field: "email", headerName: "Email", width: 300 },
+  { field: "mobile", headerName: "Mobile", width: 150 },
   { field: "date", headerName: "Date", width: 130 },
   {
     field: "message",

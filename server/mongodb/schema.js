@@ -9,6 +9,9 @@ const ContactSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    mobile: {
+      type: Number,
+    },
     message: {
       type: String,
       required: true,

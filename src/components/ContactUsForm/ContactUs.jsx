@@ -30,6 +30,7 @@ export default function ContactUs({ open, handleClose }) {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
   const [message, setMessage] = useState("");
 
   const [error, setError] = useState("");
@@ -61,6 +62,7 @@ export default function ContactUs({ open, handleClose }) {
       name,
       message,
       email,
+      mobile,
     };
     axios
       .post(addNewContactURL, data)
@@ -127,6 +129,17 @@ export default function ContactUs({ open, handleClose }) {
                 placeholder="Your full name here"
                 variant="outlined"
                 onChange={({ target }) => setName(target.value)}
+                className={classes.field}
+              />
+
+              <TextField
+                required
+                value={mobile}
+                type="number"
+                id="outlined-required"
+                placeholder="Your Mobile Number here ( Optional )"
+                variant="outlined"
+                onChange={({ target }) => setMobile(target.value)}
                 className={classes.field}
               />
 
