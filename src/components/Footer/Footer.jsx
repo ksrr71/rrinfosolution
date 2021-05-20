@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Facebook, Instagram, Twitter } from "@material-ui/icons";
+import { Facebook, Instagram, LinkedIn } from "@material-ui/icons";
 
 import styles from "./Footer.module.scss";
 
@@ -21,7 +21,7 @@ export default function Footer() {
           <div className={styles.icons}>
             <Facebook />
             <Instagram />
-            <Twitter />
+            <LinkedIn />
           </div>
         </div>
       </div>
