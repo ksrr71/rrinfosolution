@@ -15,13 +15,14 @@
   max-width: 80rem;
   overflow: hidden;
   display: flex;
+  padding: 1rem;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
   color: $primary;
-  width: 20%;
+  width: 30%;
 }
 
 .list {

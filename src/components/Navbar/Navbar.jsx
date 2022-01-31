@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <img src="/icons/logo.png" alt="logo" className={styles.logo} />
+        <h1 className={styles.logo}>RR Info Solutions</h1>
 
         <ul className={styles.list}>
           <li className={styles.item}>Home</li>

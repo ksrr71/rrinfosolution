@@ -9,25 +9,20 @@ export default function Footer() {
     <div className={styles.wrapper}>
       <div className={styles.footer}>
         <div className={styles.left}>
-          <h1>ReachTheWeb</h1>
-          <p className={styles.byline}>
-            Building Dreams And Ideas Into Reality
-          </p>
+          <h1>RR Info Solutions</h1>
+          <p className={styles.byline}></p>
         </div>
 
         <div className={styles.right}>
           <button className={styles.contactus}>Contact Us</button>
 
-          <div className={styles.icons}>
-            <Facebook />
-            <Instagram />
-            <LinkedIn />
-          </div>
+          <h3 style={{ fontWeight: "100" }}>sales@rrinfosolution.com</h3>
+          <h3 style={{ fontWeight: "100" }}>support@rrinfosolution.com</h3>
         </div>
       </div>
 
       <div className={styles.copyright}>
-        @2020 ReachTheWeb Solutions LLP, All rights reserved
+        @2021 RR Info Solutions, All rights reserved
       </div>
     </div>
   );
