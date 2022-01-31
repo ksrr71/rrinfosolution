@@ -9,7 +9,7 @@ export default function Footer() {
     <div className={styles.wrapper}>
       <div className={styles.footer}>
         <div className={styles.left}>
-          <h1>RR Info Solutions</h1>
+          <h1>RR Info Solution</h1>
           <p className={styles.byline}></p>
         </div>
 
@@ -22,7 +22,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.copyright}>
-        @2021 RR Info Solutions, All rights reserved
+        @2021 RR Info Solution, All rights reserved
       </div>
     </div>
   );
