@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <h1 className={styles.logo}>RR Info Solutions</h1>
+        <h1 className={styles.logo}>RR Info Solution</h1>
 
         <ul className={styles.list}>
           <li className={styles.item}>Home</li>
